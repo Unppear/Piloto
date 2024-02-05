@@ -1,0 +1,24 @@
+/* Definindp a fotne da pagina */
+@font-face {
+    font-family: Montserrat;
+    src: url('../Font/Montserrat/Montserrat-VariableFont_wght.ttf');
+}
+/* Resetando o documento e aplicando a fonte */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+/* Tornando a altura da pagina responsiva */
+html, body {
+    height: 100vh;
+}
+/* Cabeçalho */
+header {
+    display: flex;
+    justify-content: space-between;
+}
+header img {
+    width: 80%;
+}
