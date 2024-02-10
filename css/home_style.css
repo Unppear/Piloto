@@ -14,11 +14,75 @@
 html, body {
     height: 100vh;
 }
+/* Div de Centralização */
+.center {
+    padding: 40px 140px;
+}
 /* Cabeçalho */
 header {
     display: flex;
     justify-content: space-between;
 }
 header img {
-    width: 80%;
+    width: 60%;
+}
+.logo {
+    display: flex;
+    align-items: center;
+}
+.logo a {
+    display: inline-block;
+    text-decoration: none;
+    color: #707070;
+    font-weight: bold;
+    margin-left: 20px;
+    margin-top: 2px;
+    font-size: 14px;
+    transition: 0.7s;
+    vertical-align: middle;
+}
+.logo a:hover {
+    transform: scale(1.1);
+}
+.buttons button:nth-of-type(2) {
+    background-color: #010101;
+    color: #fafafa;
+    font-weight: 500;
+    border-radius: 5px;
+    padding: 14px 18px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.7s;
+    border: 3px solid #010101;
+}
+.buttons button:nth-of-type(1) {
+    color: #808080;
+    background-color: #fafafa;
+    border: 0;  
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.7s;
+    margin-right: 20px;
+    font-size: 14px;
+}
+.buttons button:nth-of-type(2):hover {
+    background-color: #fafafa;
+    color: #010101;
+    transform: scale(1.1);
+}
+.buttons button:nth-of-type(1):hover {
+    transform: scale(1.1);
+}
+/*--- Caixa Welcome ---*/
+.welcome_box {
+    background-color: #f9f6f1;
+    padding: 50px 40px;
+}
+.welcome_box h1 {
+    font-size: 25px;
+    margin-bottom: 7px;
+}
+.welcome_box p {
+    font-size: 15px;
+    white-space: pre-line;
 }
