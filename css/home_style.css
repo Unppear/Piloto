@@ -94,7 +94,7 @@ header img {
     font-size: 15px;
     width: 16.9%;
     transition: 0.7s;
-    margin-top: 16px;
+    margin: 16px 0 13px;
     font-weight: 500;
     padding-left: 10px;
     border-radius: 5px;
@@ -120,4 +120,16 @@ header img {
     background-color: #fafafa;
     color: #010101;
     transform: scale(1.1);
+}
+.welcome_box a {
+    width: 100%;
+    font-size: 14px;
+    color: #606060;
+    font-weight: 500;
+    transition: 0.7s;
+    display: inline-block;
+}
+.welcome_box a:hover {
+    color: #999;
+    transform: scale(1.05) translateX(35px);
 }
