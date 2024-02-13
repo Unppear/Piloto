@@ -133,3 +133,35 @@ header img {
     color: #999;
     transform: scale(1.05) translateX(35px);
 }
+/*--- Container dos Campgrounds ---*/
+.campgrounds_cont {
+    padding: 40px 0;
+    display: flex;
+    flex-direction: column;
+}
+/*--- Colunas dos Campgrounds ---*/
+.campgrounds_column {
+    display: flex;
+    justify-content: space-between;
+}
+.campgrounds_column:nth-of-type(1) {
+    margin-bottom: 30px;
+}
+/*--- Caixa dos Campgrounds ---*/
+.campgrounds_single {
+    padding: 15px;
+    border-radius: 5px;
+    width: calc(100% / 3);
+    border: 1px solid #999;
+}
+.campgrounds_single:nth-of-type(2) {
+    margin: 0 30px;
+}
+.campgrounds_single img {
+    width: 100%;
+    border-radius: 5px;
+}
+.campgrounds_single h3 {
+    font-size: 15px;
+    margin-top: 10px;
+}
