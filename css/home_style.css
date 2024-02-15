@@ -19,15 +19,20 @@ html, body {
     padding: 40px 140px;
 }
 /* Cabeçalho */
+.header_mob {
+    display: none;
+}
 header {
-    display: flex;
     padding-bottom: 40px;
+}
+.header_desk {
+    display: flex;
     justify-content: space-between;
 }
 header img {
     width: 60%;
 }
-.logo {
+.header_desk .logo {
     display: flex;
     align-items: center;
 }
@@ -45,33 +50,35 @@ header img {
 .logo a:hover {
     transform: scale(1.1);
 }
-.buttons button:nth-of-type(2) {
+.registerLogin_box a:nth-of-type(2) {
     background-color: #010101;
     color: #fafafa;
     font-weight: 500;
+    display: inline-block;
     border-radius: 5px;
     padding: 14px 18px;
     font-size: 14px;
-    cursor: pointer;
     transition: 0.7s;
+    text-decoration: none;
     border: 3px solid #010101;
 }
-.buttons button:nth-of-type(1) {
+.registerLogin_box a:nth-of-type(1) {
     color: #808080;
     background-color: #fafafa;
-    border: 0;  
+    border: 0;
+    display: inline-block;  
+    text-decoration: none;
     font-weight: 500;
-    cursor: pointer;
     transition: 0.7s;
     margin-right: 20px;
     font-size: 14px;
 }
-.buttons button:nth-of-type(2):hover {
+.registerLogin_box a:nth-of-type(2):hover {
     background-color: #fafafa;
     color: #010101;
     transform: scale(1.1);
 }
-.buttons button:nth-of-type(1):hover {
+.registerLogin_box a:nth-of-type(1):hover {
     transform: scale(1.1);
 }
 /*--- Caixa Welcome ---*/
@@ -199,4 +206,21 @@ footer {
 }
 footer img {
     width: 6.75%;
+}
+/*--- Responsivo: mobile ---*/
+@media  screen and (max-width: 600px) {
+    /*--- Cabeçalho ---*/
+    .center {
+        padding: 40px 20px;
+    }
+    .header_desk {
+        display: none;
+    }
+    .header_mob {
+        display: flex;
+        justify-content: space-between;
+    }
+    .header_mob img {
+        width: 35%;
+    }
 }
