@@ -37,6 +37,7 @@ html, body {
     position: relative;
 }
 .menu_cont nav ul {
+    display: none;
     list-style-type: none;
     background-color: #fafafa;
     border: 2px solid #010101;
@@ -272,5 +273,26 @@ footer img {
     }
     .header_mob > img {
         width: 35%;
+    }
+    .welcome_box {
+        padding: 35px;
+    }
+    .welcome_box h1 {
+        font-size: 27.9px;
+    }
+    .welcome_box p {
+        white-space: normal;
+        margin-top: 10px;
+        line-height: 22px;
+        font-size: 13px;
+    }
+    .welcome_box input, .welcome_box input:nth-of-type(2) {
+        width: 100%;
+    }
+    .welcome_box input {
+        margin: 10px 0 7px;
+    }
+    .welcome_box input:nth-of-type(2) {
+        margin: 7px 0 13px;
     }
 }
