@@ -32,7 +32,7 @@ html, body {
 .menu_cont > img {
     width: 20%;
     background-color: #f9f6f1;
-    padding: 8px;
+    padding: 9px;
     transition: 0.7s;
     cursor: pointer;
     border-radius: 5px;
@@ -155,40 +155,53 @@ header img {
     font-weight: 500;
     white-space: pre-line;
 }
+.welcome_box form {
+    display: flex;
+    margin: 16px 0;
+}
+.form_group {
+    position: relative;
+    width: 16.5%;
+}
 .welcome_box input {
-    height: 50px;
-    font-size: 15px;
-    width: 16.9%;
+    height: 60px;
+    font-size: 16px;
+    width: 100%;
     transition: 0.7s;
-    margin: 16px 0 13px;
     font-weight: 500;
-    padding-left: 10px;
+    padding-left: 43px;
     border-radius: 5px;
     border: 2px solid #e1e1e1;
 }
-.welcome_box input:nth-of-type(1):hover {
+.form_group img {
+    position: absolute;
+    left: 7%;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 999;
+}
+.welcome_box .form_group input:hover {
     border-color: #ccc;
 }
-.welcome_box input:nth-of-type(1):focus {
+.welcome_box .form_group input:focus {
     outline: 0;
     border-color: #999;
 }
-.welcome_box input:nth-of-type(2) {
+.welcome_box form > input {
     background-color: #010101;
     color: #fafafa;
-    padding-left: 0;
-    width: 7.1%;
     margin-left: 10px;
+    width: 7%;
+    padding-left: 0;
     cursor: pointer;
     border-color: #010101;
 }
-.welcome_box input:nth-of-type(2):hover {
+.welcome_box form > input:hover {
     background-color: #fafafa;
     color: #010101;
     transform: scale(1.1);
 }
 .welcome_box a {
-    width: 100%;
     font-size: 14px;
     color: #606060;
     font-weight: 500;
@@ -329,7 +342,7 @@ footer img {
     }
 }
 /*--- Responsivo: Tablet ---*/
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 600px) and (max-width: 1080px) {
     /* Div de Centralização */
     .center {
         padding: 40px 20px;
@@ -343,6 +356,16 @@ footer img {
         justify-content: space-between;
     }
     .header_mob > img {
-        width: 35%;
+        width: 22%;
+    }
+    .menu_cont > img {
+        width: 10%;
+    }
+    /*--- Caixa Welcome ---*/
+    .welcome_box input {
+        width: 40%;
+    }
+    .welcome_box input:nth-of-type(2) {
+        width: 20%;
     }
 }
