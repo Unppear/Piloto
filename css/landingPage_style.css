@@ -28,7 +28,7 @@ section {
 .img {
     background-image: url('../imgs/Hero\ Image.jpg');
     background-size: cover;
-    padding-top: 55%;
+    padding-top: 57%;
     width: 41%;
     position: absolute;
     right: 0;
@@ -38,15 +38,15 @@ section {
 }
 .content {
     width: 59%;
-    padding: 140px 0 0 170px;
+    padding: 120px 0 0 170px;
 }
 .content h1 {
-    font-size: 53px;
+    font-size: 49px;
 }
 .content > p {
     margin: 10px 0 20px;
     line-height: 28px;
-    font-size: 18.3px;
+    font-size: 15px;
     color: #716e69;
     font-weight: 500;
 }
@@ -59,7 +59,7 @@ section {
 } 
 .content span p {
     display: inline-block;
-    font-size: 18.3px;
+    font-size: 15px;
     top: 2.5px;
     position: relative;
     color: #716e69;
@@ -68,15 +68,15 @@ section {
 span img {
     display: inline-block;
     margin-right: 10px;
-    height: 27px;
-    width: 27px; 
+    height: 26px;
+    width: 26px; 
     vertical-align: middle;
 }
 .content a {
     display: inline-block;
     text-decoration: none;
     font-weight: bold;
-    font-size: 17px;
+    font-size: 15px;
     padding: 18px 24px;
     margin-top: 25px;
     transition: 0.7s;
@@ -110,7 +110,7 @@ span img {
     }
     
     header img {
-        width: 33%;
+        width: 30%;
     }
     section {
         display: block;
@@ -123,23 +123,22 @@ span img {
     }
     .content {
         width: 100%;
-        padding: 35px 0 0 15px;
+        padding: 35px 10px 0 15px;
     }
     .content h1 {
-        font-size: 32px;
+        font-size: 31px;
         line-height: 35px;
     }
-    
     .content > p {
         margin: 7px 0 20px;
         line-height: 23px;
-        font-size: 15px;
+        font-size: 14px;
     }
     .content > p br {
         display: none;
     }
     .content span p {
-        font-size: 15px;
+        font-size: 14px;
     }
     span img {
         height: 24px;
@@ -165,12 +164,12 @@ span img {
     }
 }
 /*--- Responsivo: tablet ---*/
-@media screen and (max-width: 1080px) {
+@media screen and (min-width: 601px) and (max-width: 1024px) {
     header {
         padding: 35px 0 35px 38px;
     }
     header img {
-        width: 19%;
+        width: 17%;
     }
     section {
         display: block;
@@ -183,13 +182,15 @@ span img {
     }
     .content {
         width: 100%;
-        padding: 35px 0 0 38px;
+        padding: 35px 60px 0 30px;
     }
     .content h1 {
-        font-size: 42px;
-        line-height: 45px;
+        font-size: 40px;
+        line-height: 50px;
     }
-    
+    .content h1 br {
+        display: none;
+    }
     .content > p {
         margin: 10px 0 13px;
         line-height: 22px;
@@ -227,5 +228,37 @@ span img {
     }
     .partners_logo img:nth-of-type(3) {
         width: 27%;
+    }
+}
+@media screen and (min-width: 1280px) and (max-width: 1334px) {
+    header {
+        padding-left: 80px;
+    }
+    header img {
+        width: 10%;
+    }
+    .img {
+        padding-top: 61%;
+        width: 45%;
+    }
+    .content {
+        width: 55%;
+        padding: 100px 0 0 80px;
+    }
+    .content h1 {
+        font-size: 48px;
+    }
+    .content > p {
+        font-size: 16px;
+    }
+    .content span img {
+        width: 25px;
+        height: 25px;
+    }
+    .content span p {
+        font-size: 16px;
+    }
+    .content a {
+        font-size: 16px;
     }
 }
