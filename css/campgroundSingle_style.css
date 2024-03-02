@@ -13,3 +13,64 @@
 html, body {
     height: 100vh;
 }
+/*--- Container Campground ---*/
+.campSingle_cont {
+    display: grid;
+    grid-template-areas:
+    "map info"
+    "map info"
+    "map info"
+    ;
+    justify-content: center;
+    gap: 35px;
+}
+.map_cont {
+    grid-area: map;
+}
+.map {
+    padding: 40px;
+    border: 1px solid #dadada;
+    border-radius: 5px;
+}
+.map iframe {
+    visibility: visible !important;
+}
+.map a {
+    display: none;
+}
+.info {
+    grid-area: info;
+}
+.content {
+    padding: 40px;
+    border: 1px solid #dadada;
+    border-radius: 5px;
+}
+.content img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+.content h2 {
+    float: left;
+    font-size: 22px;
+    width: 50%;
+}
+.content h3 {
+    float: right;
+    width: 50%;
+    font-size: 17px;
+    font-weight: 500;
+    text-align: right;
+}
+.content p {
+    margin: 10px 0;
+    font-size: 14px;
+}
+.content p, .content em {
+    font-weight: 500;
+    color: #898989;
+}
+.content em {
+    font-size: 14px;
+}
