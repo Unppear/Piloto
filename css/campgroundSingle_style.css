@@ -24,9 +24,11 @@ html, body {
     justify-content: center;
     gap: 35px;
 }
+/*--- Container do Mapa ---*/
 .map_cont {
     grid-area: map;
 }
+/*--- Mapa ---*/
 .map {
     padding: 40px;
     border: 1px solid #dadada;
@@ -38,10 +40,14 @@ html, body {
 .map a {
     display: none;
 }
+/*--- Container das Informações ---*/
 .info {
     grid-area: info;
+    gap: 40px;
+    display: grid;
 }
-.content {
+/*--- Container do Conteudo & Container dos Comentários ---*/
+.content, .comments_cont {
     padding: 40px;
     border: 1px solid #dadada;
     border-radius: 5px;
@@ -51,26 +57,56 @@ html, body {
     border-radius: 5px;
     margin-bottom: 20px;
 }
-.content h2 {
+.content h2, .comments_single h3 {
     float: left;
     font-size: 22px;
     width: 50%;
 }
-.content h3 {
+.content h3, .comments_single h4 {
     float: right;
     width: 50%;
     font-size: 17px;
     font-weight: 500;
     text-align: right;
 }
-.content p {
+.content p, .comments_single p {
     margin: 10px 0;
     font-size: 14px;
 }
-.content p, .content em {
+.content p, .content em, .comments_single p {
     font-weight: 500;
     color: #898989;
 }
 .content em {
     font-size: 14px;
+}
+.comments_cont {
+    padding-top: 20px;
+}
+/*--- Comentários ---*/
+.comments_single {
+    padding: 20px 0;
+    border-bottom: 1px solid #dadada;
+    border-radius: 3px;
+}
+.comments_single h3 {
+    font-size: 15px;
+}
+.comments_single h4 {
+    font-size: 13px;
+    color: #8c8c8c;
+}
+/*--- Botão para adicionar um comentário ---*/
+.comments_cont button {
+    margin-top: 10px;
+    padding: 20px;
+    background-color: #010101;
+    border-color: #010101;
+    color: #fafafa;
+    font-size: 14px;
+    border-radius: 5px;
+    font-weight: 500;
+}
+.comments_cont button i {
+    margin-right: 7px;
 }
