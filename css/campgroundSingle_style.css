@@ -123,3 +123,14 @@ html, body {
 footer {
     padding: 45px 0;
 }
+/*--- Responsivo: Mobile ---*/
+@media screen and (max-width: 600px) {
+    .campSingle_cont {
+        grid-template-areas: 
+            "info"
+            "info"
+            "info"
+            "map"
+        ;
+    }
+}
