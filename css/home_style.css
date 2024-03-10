@@ -309,11 +309,23 @@ footer img {
         line-height: 22px;
         font-size: 13px;
     }
-    .welcome_box input, .welcome_box input:nth-of-type(2) {
+    /*--- Formulário ---*/
+    .welcome_box form {
+        flex-wrap: wrap;
+        margin: 13px 0;
+    }
+    .form_group img {
+        top: 49%;
+        transform: translateY(-49%);
+    }
+    .form_group input {
+        padding-top: 2px;
+    }
+    .welcome_box form > input, .form_group, .form_group input {
         width: 100%;
     }
-    .welcome_box input {
-        margin: 12px 0 7px;
+    .welcome_box form > input {
+        margin: 15px 0 0;
     }
     .welcome_box input:nth-of-type(2) {
         margin: 7px 0 13px;
