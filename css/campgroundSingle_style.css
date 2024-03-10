@@ -22,7 +22,7 @@ html, body {
     "map info"
     ;
     justify-content: center;
-    gap: 35px;
+    gap: 40px;
 }
 /*--- Container do Mapa ---*/
 .map_cont {
@@ -36,6 +36,7 @@ html, body {
 }
 .map iframe {
     visibility: visible !important;
+    border-radius: 5px;
 }
 .map a {
     display: none;
@@ -126,11 +127,22 @@ footer {
 /*--- Responsivo: Mobile ---*/
 @media screen and (max-width: 600px) {
     .campSingle_cont {
-        grid-template-areas: 
-            "info"
-            "info"
-            "info"
-            "map"
-        ;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .map {
+        padding: 30px;
+    }
+    .content, .comments_cont {
+        padding: 30px;
+    }
+    .content h2 {
+        font-size: 18px;
+    }
+    .content h3 {
+        font-size: 15px;
+    }
+    .content p {
+        text-align: left;
     }
 }
