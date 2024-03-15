@@ -354,7 +354,7 @@ footer img {
     }
 }
 /*--- Responsivo: Tablet ---*/
-@media screen and (min-width: 600px) and (max-width: 1024px) {
+@media screen and (min-width: 601px) and (max-width: 1024px) {
     /* Div de Centralização */
     .center {
         padding: 40px 20px;
@@ -371,13 +371,13 @@ footer img {
         width: 19%;
     }
     .menu_cont > img {
-        width: 9%;
+        width: 8.5%;
     }
     .menu_cont nav ul {
-        width: 50%;
+        width: 43%;
     }
     .menu_cont li img {
-        width: 6%;
+        width: 6.5%;
     }
     /*--- Caixa Welcome ---*/
     .welcome_box h1 {
@@ -456,5 +456,43 @@ footer img {
     /*--- Colunas dos Campgrounds ---*/
     .campgrounds_column {
         width: 47%;
+    }
+}
+@media screen and (min-width: 800px) and (max-width: 820px) {
+    /*--- Caixa Welcome ---*/
+    .welcome_box h1 {
+        font-size: 35px;
+    }
+    .welcome_box p {
+        font-size: 16.73px;
+    }
+    .form_group {
+        width: 41.1%;
+    }
+    .form_group img {
+        left: 7%;
+    }
+    .welcome_box form > input {
+        width: 17.3%;
+    }
+    /*--- Caixas dos Campgrounds ---*/
+    .campgrounds_single:not(:last-of-type) {
+        margin-bottom: 30px;
+    }
+}
+@media screen and (width: 1280px) {
+    /*--- Container para ajustes ---*/
+    .center {
+        padding: 50px;
+    }
+    /*--- Caixa Welcome ---*/
+    .form_group {
+        width: 23.5%;
+    }
+    .welcome_box form > input {
+        width: 9.5%;
+    }
+    .form_group img {
+        left: 6.5%;
     }
 }

@@ -126,10 +126,12 @@ footer {
 }
 /*--- Responsivo: Mobile ---*/
 @media screen and (max-width: 600px) {
+    /*--- Container Campground ---*/
     .campSingle_cont {
         display: flex;
         flex-direction: column-reverse;
     }
+    /*--- Mapa ---*/
     .map {
         padding: 30px;
     }
@@ -144,5 +146,34 @@ footer {
     }
     .content p {
         text-align: left;
+    }
+}
+/*--- Responsivo: Tablet ---*/
+@media screen and (min-width: 601px) and (max-width: 1279px) {
+    /*--- Container Campground ---*/
+    .campSingle_cont {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    /*--- Mapa ---*/
+    .map {
+        padding: 20px;
+    }
+}
+@media screen and (width: 1280px) {
+    /*--- Container de ajustes ---*/
+    .center {
+        padding: 40px;
+    }
+    /*--- Mapa ---*/
+    .map, .content, .comments_cont {
+        padding: 25px;
+    }
+    /*--- Rodape ---*/
+    footer {
+        padding: 45px 0 5px;
+    }
+    footer img {
+        width: 9%;
     }
 }
